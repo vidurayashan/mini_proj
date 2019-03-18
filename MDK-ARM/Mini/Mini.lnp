@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"mini\startup_stm32f072xb.o"
+"mini\stm32f0xx_it.o"
+"mini\stm32f0xx_hal_msp.o"
+"mini\main.o"
+"mini\button.o"
+"mini\stm32f0xx_hal_gpio.o"
+"mini\stm32f0xx_hal_uart_ex.o"
+"mini\stm32f0xx_hal.o"
+"mini\stm32f0xx_hal_pwr_ex.o"
+"mini\stm32f0xx_hal_i2c.o"
+"mini\stm32f0xx_hal_flash.o"
+"mini\stm32f0xx_hal_cortex.o"
+"mini\stm32f0xx_hal_uart.o"
+"mini\stm32f0xx_hal_rcc_ex.o"
+"mini\stm32f0xx_hal_tim.o"
+"mini\stm32f0xx_hal_i2c_ex.o"
+"mini\stm32f0xx_hal_dma.o"
+"mini\stm32f0xx_hal_rcc.o"
+"mini\stm32f0xx_hal_pwr.o"
+"mini\stm32f0xx_hal_tim_ex.o"
+"mini\stm32f0xx_hal_flash_ex.o"
+"mini\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "Mini\Mini.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Mini.map" -o Mini\Mini.axf
